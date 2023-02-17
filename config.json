@@ -11,30 +11,30 @@
           "settings":{
               "clients":[
                   {
-                      "id":"de04add9-5c68-8bab-950c-08cd5320df18",
+                      "id":"74ed8123-c872-43b0-a420-11b40aa5f8ae",
                       "flow":"xtls-rprx-direct"
                   }
               ],
               "decryption":"none",
               "fallbacks":[
                   {
-                      "dest":3001
+                      "dest":4001
                   },
                   {
                       "path":"/vless",
-                      "dest":3002
+                      "dest":4002
                   },
                   {
                       "path":"/vmess",
-                      "dest":3003
+                      "dest":4003
                   },
                   {
                       "path":"/trojan",
-                      "dest":3004
+                      "dest":4004
                   },
                   {
                       "path":"/shadowsocks",
-                      "dest":3005
+                      "dest":4005
                   }
               ]
           },
@@ -43,13 +43,13 @@
           }
       },
       {
-          "port":3001,
+          "port":4001,
           "listen":"127.0.0.1",
           "protocol":"vless",
           "settings":{
               "clients":[
                   {
-                      "id":"de04add9-5c68-8bab-950c-08cd5320df18"
+                      "id":"74ed8123-c872-43b0-a420-11b40aa5f8ae"
                   }
               ],
               "decryption":"none"
@@ -60,13 +60,13 @@
           }
       },
       {
-          "port":3002,
+          "port":4002,
           "listen":"127.0.0.1",
           "protocol":"vless",
           "settings":{
               "clients":[
                   {
-                      "id":"de04add9-5c68-8bab-950c-08cd5320df18",
+                      "id":"74ed8123-c872-43b0-a420-11b40aa5f8ae",
                       "level":0,
                       "email":"argo@xray"
                   }
@@ -91,13 +91,13 @@
           }
       },
       {
-          "port":3003,
+          "port":4003,
           "listen":"127.0.0.1",
           "protocol":"vmess",
           "settings":{
               "clients":[
                   {
-                      "id":"de04add9-5c68-8bab-950c-08cd5320df18",
+                      "id":"74ed8123-c872-43b0-a420-11b40aa5f8ae",
                       "alterId":0
                   }
               ]
@@ -119,13 +119,13 @@
           }
       },
       {
-          "port":3004,
+          "port":4004,
           "listen":"127.0.0.1",
           "protocol":"trojan",
           "settings":{
               "clients":[
                   {
-                      "password":"de04add9-5c68-8bab-950c-08cd5320df18"
+                      "password":"74ed8123-c872-43b0-a420-11b40aa5f8ae"
                   }
               ]
           },
@@ -147,14 +147,14 @@
           }
       },
       {
-          "port":3005,
+          "port":4005,
           "listen":"127.0.0.1",
           "protocol":"shadowsocks",
           "settings":{
               "clients":[
                   {
                       "method":"chacha20-ietf-poly1305",
-                      "password":"de04add9-5c68-8bab-950c-08cd5320df18"
+                      "password":"74ed8123-c872-43b0-a420-11b40aa5f8ae"
                   }
               ],
               "decryption":"none"
